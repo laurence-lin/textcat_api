@@ -1,0 +1,285 @@
+22-Jul-21 09:50:04 - Received a training request: 14104d6d-a33c-4c70-8315-395df082f2b7
+22-Jul-21 09:50:04 - Starting to convert the dataset to spaCy format...
+22-Jul-21 09:50:11 - The training data have been successfully converted and saved.
+22-Jul-21 09:50:13 - The testing data have been successfully converted and saved.
+22-Jul-21 09:50:14 - [+] Auto-filled config with all values
+[+] Saved config
+D:\microservices\text_cat\projects\14104d6d-a33c-4c70-8315-395df082f2b7\config.cfg
+You can now add your data and train your pipeline:
+python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
+
+22-Jul-21 09:50:14 - Starting to train models...
+22-Jul-21 09:53:22 - [+] Created output directory:
+D:\microservices\text_cat\projects\14104d6d-a33c-4c70-8315-395df082f2b7\output
+[i] Using CPU
+[1m
+=========================== Initializing pipeline ===========================[0m
+[+] Initialized pipeline
+[1m
+============================= Training pipeline =============================[0m
+[i] Pipeline: ['tok2vec', 'textcat']
+[i] Initial learn rate: 0.001
+E    #       LOSS TOK2VEC  LOSS TEXTCAT  CATS_SCORE  SCORE 
+---  ------  ------------  ------------  ----------  ------
+  0       0          0.00          0.86        2.04    0.02
+  0     200          0.00        169.68       22.03    0.22
+  0     400          0.00        154.72       32.62    0.33
+  1     600          0.00         89.47       41.80    0.42
+  1     800          0.00         73.85       41.89    0.42
+  2    1000          0.00         56.39       38.33    0.38
+  2    1200          0.00         30.59       40.69    0.41
+  3    1400          0.00         33.32       48.50    0.49
+  3    1600          0.00         22.73       47.25    0.47
+  3    1800          0.00         21.71       44.44    0.44
+  4    2000          0.00         12.74       45.81    0.46
+  4    2200          0.00         19.07       46.69    0.47
+  5    2400          0.00          7.93       45.81    0.46
+  5    2600          0.00         11.25       50.56    0.51
+  6    2800          0.00         10.13       50.40    0.50
+  6    3000          0.00          8.48       45.82    0.46
+  7    3200          0.00         12.25       45.19    0.45
+  7    3400          0.00         10.07       40.93    0.41
+  8    3600          0.00         10.70       48.29    0.48
+  9    3800          0.00         10.06       43.83    0.44
+ 10    4000          0.00          8.33       44.72    0.45
+ 11    4200          0.00         11.62       45.37    0.45
+[+] Saved pipeline to output directory
+D:\microservices\text_cat\projects\14104d6d-a33c-4c70-8315-395df082f2b7\output\model-last
+
+22-Jul-21 09:53:23 - The training parameters have been logged.
+22-Jul-21 09:53:23 - A plot of class counts has been saved.
+22-Jul-21 09:53:23 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+22-Jul-21 09:53:23 - The model has been successfully trained.
+22-Jul-21 09:53:23 - A plot of model performance per category has been saved.
+22-Jul-21 09:53:23 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+22-Jul-21 09:53:24 - A plot of confusion matrix has been saved.
+22-Jul-21 09:53:24 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+22-Jul-21 09:53:24 - The testing metrics have been logged.
+22-Jul-21 09:53:24 - opening Sqlite table 'unnamed' in './training_results_db.sqlite'
+22-Jul-21 09:53:24 - The training response has been saved to SQLite.
+22-Jul-21 09:53:31 - Response from the external API endpoint: <Response [200]>
+22-Jul-21 09:53:31 - The training process is complete.
+23-Jul-21 09:45:08 - Received a training request: aa5d4146-f130-4aa9-b9f0-0d95ece84266
+23-Jul-21 09:45:08 - Starting to convert the dataset to spaCy format...
+23-Jul-21 09:45:11 - The training data have been successfully converted and saved.
+23-Jul-21 09:45:12 - The testing data have been successfully converted and saved.
+23-Jul-21 09:45:13 - [+] Auto-filled config with all values
+[+] Saved config
+D:\microservices\text_cat\projects\aa5d4146-f130-4aa9-b9f0-0d95ece84266\config.cfg
+You can now add your data and train your pipeline:
+python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
+
+23-Jul-21 09:45:13 - Starting to train models...
+23-Jul-21 09:48:33 - [+] Created output directory:
+D:\microservices\text_cat\projects\aa5d4146-f130-4aa9-b9f0-0d95ece84266\output
+[i] Using CPU
+[1m
+=========================== Initializing pipeline ===========================[0m
+[+] Initialized pipeline
+[1m
+============================= Training pipeline =============================[0m
+[i] Pipeline: ['tok2vec', 'textcat']
+[i] Initial learn rate: 0.001
+E    #       LOSS TOK2VEC  LOSS TEXTCAT  CATS_SCORE  SCORE 
+---  ------  ------------  ------------  ----------  ------
+  0       0          0.00          0.86        0.00    0.00
+  0     200          0.00        165.05       15.43    0.15
+  1     400          0.00         88.59       37.17    0.37
+  2     600          0.00         41.66       37.17    0.37
+  3     800          0.00         29.73       42.18    0.42
+  4    1000          0.00          9.24       43.66    0.44
+  5    1200          0.00          2.43       42.73    0.43
+  6    1400          0.00          5.43       41.32    0.41
+  7    1600          0.00          4.52       38.52    0.39
+  8    1800          0.00          3.92       40.38    0.40
+  9    2000          0.00          3.73       42.70    0.43
+ 10    2200          0.00          3.10       40.53    0.41
+ 11    2400          0.00          0.17       44.13    0.44
+ 12    2600          0.00          0.28       42.99    0.43
+ 13    2800          0.00          0.42       44.60    0.45
+ 15    3000          0.00          1.74       40.67    0.41
+ 17    3200          0.00          0.07       42.40    0.42
+ 19    3400          0.00          0.03       43.40    0.43
+ 21    3600          0.00          0.03       41.94    0.42
+ 23    3800          0.00          0.02       42.07    0.42
+ 26    4000          0.00          0.02       42.13    0.42
+ 29    4200          0.00          0.02       42.38    0.42
+ 31    4400          0.00          0.02       41.37    0.41
+[+] Saved pipeline to output directory
+D:\microservices\text_cat\projects\aa5d4146-f130-4aa9-b9f0-0d95ece84266\output\model-last
+
+23-Jul-21 09:48:33 - The training parameters have been logged.
+23-Jul-21 09:48:33 - A plot of class counts has been saved.
+23-Jul-21 09:48:33 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+23-Jul-21 09:48:33 - The model has been successfully trained.
+23-Jul-21 09:48:33 - A plot of model performance per category has been saved.
+23-Jul-21 09:48:33 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+23-Jul-21 09:48:34 - A plot of confusion matrix has been saved.
+23-Jul-21 09:48:34 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+23-Jul-21 09:48:34 - The testing metrics have been logged.
+23-Jul-21 09:48:34 - opening Sqlite table 'unnamed' in './training_results_db.sqlite'
+23-Jul-21 09:48:34 - The training response has been saved to SQLite.
+23-Jul-21 09:48:34 - Response from the external API endpoint: <Response [200]>
+23-Jul-21 09:48:34 - The training process is complete.
+23-Jul-21 10:05:01 - Received a training request: a2ae7df5-69b0-48af-90b1-52b36a1081bd
+23-Jul-21 10:05:01 - Starting to convert the dataset to spaCy format...
+23-Jul-21 10:05:04 - The training data have been successfully converted and saved.
+23-Jul-21 10:05:04 - The testing data have been successfully converted and saved.
+23-Jul-21 10:05:06 - [+] Auto-filled config with all values
+[+] Saved config
+D:\microservices\text_cat\projects\a2ae7df5-69b0-48af-90b1-52b36a1081bd\config.cfg
+You can now add your data and train your pipeline:
+python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
+
+23-Jul-21 10:05:06 - Starting to train models...
+23-Jul-21 10:28:44 - [+] Created output directory:
+D:\microservices\text_cat\projects\a2ae7df5-69b0-48af-90b1-52b36a1081bd\output
+[i] Using CPU
+[1m
+=========================== Initializing pipeline ===========================[0m
+[+] Initialized pipeline
+[1m
+============================= Training pipeline =============================[0m
+[i] Pipeline: ['tok2vec', 'textcat']
+[i] Initial learn rate: 0.001
+E    #       LOSS TOK2VEC  LOSS TEXTCAT  CATS_SCORE  SCORE 
+---  ------  ------------  ------------  ----------  ------
+  0       0          0.00          0.86        0.00    0.00
+  0     200         12.78        195.08        0.00    0.00
+  1     400          7.87        196.92        4.08    0.04
+  2     600          3.53        170.68        1.50    0.02
+  3     800          2.32        166.45        6.43    0.06
+  3    1000          3.74        155.65        0.00    0.00
+  4    1200          4.32        150.32        4.08    0.04
+  5    1400          4.76        135.61       10.53    0.11
+  6    1600          4.22        132.37       11.90    0.12
+  7    1800          4.20        110.57       15.69    0.16
+  8    2000          7.76        111.26       10.71    0.11
+  8    2200          7.82         95.27       29.99    0.30
+  9    2400          9.74         79.97       19.32    0.19
+ 10    2600         21.60         74.31       26.25    0.26
+ 12    2800         12.60         49.07       19.77    0.20
+ 13    3000         21.84         43.41       17.62    0.18
+ 14    3200         12.67         19.88       21.22    0.21
+ 16    3400          7.48          8.68       22.20    0.22
+ 18    3600          5.27          6.03       23.12    0.23
+ 20    3800         15.89          3.14       21.90    0.22
+[+] Saved pipeline to output directory
+D:\microservices\text_cat\projects\a2ae7df5-69b0-48af-90b1-52b36a1081bd\output\model-last
+
+23-Jul-21 10:28:44 - The training parameters have been logged.
+23-Jul-21 10:28:44 - A plot of class counts has been saved.
+23-Jul-21 10:28:44 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+23-Jul-21 10:28:44 - The model has been successfully trained.
+23-Jul-21 10:28:44 - A plot of model performance per category has been saved.
+23-Jul-21 10:28:44 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+23-Jul-21 10:28:47 - A plot of confusion matrix has been saved.
+23-Jul-21 10:28:47 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+23-Jul-21 10:28:47 - The testing metrics have been logged.
+23-Jul-21 10:28:47 - opening Sqlite table 'unnamed' in './training_results_db.sqlite'
+23-Jul-21 10:28:47 - The training response has been saved to SQLite.
+23-Jul-21 10:28:47 - Response from the external API endpoint: <Response [200]>
+23-Jul-21 10:28:47 - The training process is complete.
+26-Jul-21 09:11:19 - Received a training request: string
+26-Jul-21 09:11:19 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 371, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\routing.py", line 55, in app
+    await response(scope, receive, send)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\responses.py", line 146, in __call__
+    await self.background()
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\background.py", line 35, in __call__
+    await task()
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\background.py", line 20, in __call__
+    await run_in_threadpool(self.func, *self.args, **self.kwargs)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\starlette\concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\microservices\text_cat\main.py", line 113, in train_model
+    train_df, dev_df = train_test_split(filtered_df, test_size=task.test_size, random_state=1, stratify=filtered_df[LABEL_COL])
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\sklearn\model_selection\_split.py", line 2175, in train_test_split
+    n_train, n_test = _validate_shuffle_split(n_samples, test_size, train_size,
+  File "C:\Users\howard.haowen\Anaconda3\envs\fastapi\lib\site-packages\sklearn\model_selection\_split.py", line 1857, in _validate_shuffle_split
+    raise ValueError(
+ValueError: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+28-Jul-21 09:53:31 - Received a training request: 136f1264-8d7e-4052-af3a-6d99d8666e6f
+28-Jul-21 09:53:31 - Starting to convert the dataset to spaCy format...
+28-Jul-21 09:53:39 - The training data have been successfully converted and saved.
+28-Jul-21 09:53:40 - The testing data have been successfully converted and saved.
+28-Jul-21 09:53:43 - [+] Auto-filled config with all values
+[+] Saved config
+D:\microservices\text_cat\projects\136f1264-8d7e-4052-af3a-6d99d8666e6f\config.cfg
+You can now add your data and train your pipeline:
+python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
+
+28-Jul-21 09:53:43 - Starting to train models...
+28-Jul-21 09:56:54 - [+] Created output directory:
+D:\microservices\text_cat\projects\136f1264-8d7e-4052-af3a-6d99d8666e6f\output
+[i] Using CPU
+[1m
+=========================== Initializing pipeline ===========================[0m
+[+] Initialized pipeline
+[1m
+============================= Training pipeline =============================[0m
+[i] Pipeline: ['tok2vec', 'textcat']
+[i] Initial learn rate: 0.001
+E    #       LOSS TOK2VEC  LOSS TEXTCAT  CATS_SCORE  SCORE 
+---  ------  ------------  ------------  ----------  ------
+  0       0          0.00          0.86        2.04    0.02
+  0     200          0.00        169.68       22.03    0.22
+  0     400          0.00        154.72       32.62    0.33
+  1     600          0.00         89.47       41.80    0.42
+  1     800          0.00         73.85       41.89    0.42
+  2    1000          0.00         56.39       38.33    0.38
+  2    1200          0.00         30.59       40.69    0.41
+  3    1400          0.00         33.32       48.50    0.49
+  3    1600          0.00         22.73       47.25    0.47
+  3    1800          0.00         21.71       44.44    0.44
+  4    2000          0.00         12.74       45.81    0.46
+  4    2200          0.00         19.07       46.69    0.47
+  5    2400          0.00          7.93       45.81    0.46
+  5    2600          0.00         11.25       50.56    0.51
+  6    2800          0.00         10.13       50.40    0.50
+  6    3000          0.00          8.48       45.82    0.46
+  7    3200          0.00         12.25       45.19    0.45
+  7    3400          0.00         10.07       40.93    0.41
+  8    3600          0.00         10.70       48.29    0.48
+  9    3800          0.00         10.06       43.83    0.44
+ 10    4000          0.00          8.33       44.72    0.45
+ 11    4200          0.00         11.62       45.37    0.45
+[+] Saved pipeline to output directory
+D:\microservices\text_cat\projects\136f1264-8d7e-4052-af3a-6d99d8666e6f\output\model-last
+
+28-Jul-21 09:56:54 - The training parameters have been logged.
+28-Jul-21 09:56:55 - A plot of class counts has been saved.
+28-Jul-21 09:56:55 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+28-Jul-21 09:56:55 - The model has been successfully trained.
+28-Jul-21 09:56:55 - A plot of model performance per category has been saved.
+28-Jul-21 09:56:55 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+28-Jul-21 09:56:56 - A plot of confusion matrix has been saved.
+28-Jul-21 09:56:56 - opening Sqlite table 'unnamed' in './plots_db.sqlite'
+28-Jul-21 09:56:56 - The testing metrics have been logged.
+28-Jul-21 09:56:56 - opening Sqlite table 'unnamed' in './training_results_db.sqlite'
+28-Jul-21 09:56:56 - The training response has been saved to SQLite.
+28-Jul-21 09:56:56 - Response from the external API endpoint: <Response [200]>
+28-Jul-21 09:56:56 - The training process is complete.
